@@ -12,7 +12,7 @@ function Note(props) {
 
   return (
     <div className="each-note">
-      <h2>{props.title}</h2>
+      <h2 className="note-title">{props.title}</h2>
 
       <p className="content-para">{props.content}</p>
       <Link to={`/viewAgain/${userId}/?videoid=${videoUrl}&show=false`}>
