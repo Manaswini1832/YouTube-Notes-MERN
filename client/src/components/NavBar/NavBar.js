@@ -7,7 +7,7 @@ function NavBar() {
     <div className="nav">
       <div className="nav-items">
         <ul>
-          <Link to="/api/search">
+          <Link to="/search">
             <li>Search</li>
           </Link>
         </ul>
