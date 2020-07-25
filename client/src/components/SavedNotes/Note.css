@@ -1,0 +1,60 @@
+.notes-div {
+  width: 100vw;
+  padding: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.each-note {
+  width: 90%;
+  padding: 30px;
+  border-radius: 30px;
+  margin: 0.5rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(78, 204, 163, 0.4);
+}
+
+.content-para {
+  overflow-wrap: break-word;
+  padding: 1rem;
+}
+
+.tag {
+  background-color: rgba(34, 32, 32, 0.6);
+  color: #fff;
+  border-radius: 30px;
+  padding: 1vh 1.5vw;
+  display: inline-block;
+  font-size: 80%;
+  margin: 20px 2px;
+  padding: 15px 30px;
+}
+
+.tags-div {
+  position: relative;
+}
+
+.watch-again-btn {
+  border-style: none;
+  background-color: transparent;
+  padding: 1rem;
+  font-family: inherit;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #fff;
+  background-color: rgb(26, 73, 57);
+}
+
+.watch-again-btn:hover {
+  transform: scale(1.1);
+}
+
+.watch-again-btn:focus {
+  outline: none;
+}

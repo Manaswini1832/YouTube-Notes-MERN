@@ -1,0 +1,40 @@
+.savedNote-div {
+  padding-top: 60px;
+  background-color: #003545;
+  width: 100vw;
+  min-height: 100vh;
+  color: #fff;
+}
+
+body {
+  position: relative;
+}
+
+.warning-head {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.del-btn {
+  border-style: none;
+  background-color: transparent;
+  border: 1px solid #4ecca3;
+  padding: 1rem;
+  font-family: inherit;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #fff;
+  margin: 2rem;
+}
+
+.del-btn:hover {
+  transform: scale(1.1);
+}
+
+.del-btn:focus {
+  outline: none;
+}

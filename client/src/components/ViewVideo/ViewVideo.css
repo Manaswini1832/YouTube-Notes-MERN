@@ -1,0 +1,81 @@
+.view-video-container {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  padding: 80px 20px;
+  background-color: #ebebeb;
+}
+
+#ytplayer {
+  padding: 5px;
+  width: 80vw;
+  height: calc(80vw / 1.8);
+}
+
+.note {
+  width: 45vw;
+  background-color: #6b778d;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+textarea {
+  width: 100%;
+  max-width: 100%;
+  padding: 10px;
+  font-family: inherit;
+}
+
+input,
+textarea {
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 10px;
+}
+
+.note label {
+  margin: 1rem;
+  color: #fff;
+}
+
+.save {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  color: #fff;
+  background-color: #000;
+  margin: 0;
+  border-style: none;
+}
+
+.save:hover {
+  background-color: #4f4d4d;
+  cursor: pointer;
+  outline: none;
+  transform: scale(1.1);
+}
+
+.tag-input {
+  width: 40vw;
+  margin: 1vw;
+}
+
+@media only screen and (max-width: 770px) {
+  .view-video-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #yt-player {
+    width: 100vw;
+    height: calc(100vw / 1.78);
+  }
+
+  .note {
+    width: 80vw;
+  }
+}

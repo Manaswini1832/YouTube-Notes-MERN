@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat";
+}
+
+.container {
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #003545;
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+}
+
+.landing-head {
+  font-family: "Montserrat", serif;
+  animation: headAnim 0.6s ease forwards;
+  padding: 0 3rem;
+}
+
+@keyframes headAnim {
+  0% {
+    transform: scale(0.6);
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}
+
+.landing-head-span {
+  color: #4ecca3;
+}
+
+.landing-para {
+  padding: 2rem 3rem;
+  animation: paraAnim 0.6s ease 0.6s both;
+}
+
+@keyframes paraAnim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.reg-btn-landing {
+  font-family: inherit;
+  border-radius: 10px;
+  border-style: none;
+  cursor: pointer;
+  background-color: #40a886;
+  color: #fff;
+  padding: 1rem;
+  animation: btnShow 0.6s ease 0.9s both;
+}
+
+.login-btn-landing {
+  border-style: none;
+  background-color: transparent;
+  border: 1px solid #4ecca3;
+  padding: 1rem;
+  font-family: inherit;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #fff;
+  animation: btnShow 0.6s ease 1s both;
+}
+
+.reg-btn-landing:hover,
+.login-btn-landing:hover {
+  transform: scale(1.1);
+}
+
+.reg-btn-landing:focus,
+.login-btn-landing:focus {
+  outline: none;
+}
+
+@keyframes btnShow {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,27 @@
+.nav {
+  width: 100vw;
+  height: 50px;
+  background-color: #32407b;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 5vw;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+li {
+  color: #fff;
+  margin: 8px;
+}
+
+.nav li:hover {
+  transform: scale(1.1);
+}

@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+}
+
+.warning-div {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #003545;
+  color: #fff;
+}
+
+.warning-btn {
+  border-style: none;
+  background-color: transparent;
+  border: 1px solid #4ecca3;
+  padding: 1rem;
+  font-family: inherit;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #fff;
+  margin: 1rem;
+}
+
+.warning-btn:hover {
+  transform: scale(1.1);
+}
+
+.warning-btn:focus {
+  outline: none;
+}
