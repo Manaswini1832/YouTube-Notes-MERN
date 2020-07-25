@@ -24,7 +24,7 @@ function Login() {
             .catch((err) => {
               throw err;
             });
-          history.push("/api/search"); //To redirect the user to the /api/search route after
+          history.push("/search"); //To redirect the user to the /api/search route after
           //logging in
           window.location.reload(); //To reload so that the search page is visible now
         } else {

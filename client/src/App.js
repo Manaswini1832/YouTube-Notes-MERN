@@ -14,7 +14,7 @@ function App() {
       <Route path="/" exact component={Landing} />
       <Route path="/register" exact component={Register} />
       <Route path="/login" exact component={Login} />
-      <Route path="/api/search" exact component={Search} />
+      <Route path="/search" exact component={Search} />
       <Route path="/view/:userId" exact component={ViewVideo} />
       <Route path="/viewAgain/:userId" exact component={WatchAgain} />
       <Route path="/notes/:userId" exact component={SavedNotes} />
