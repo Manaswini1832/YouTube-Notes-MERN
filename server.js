@@ -1,6 +1,8 @@
 const express = require("express");
 const app = express();
 
+const path = require("path");
+
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const mongoose = require("mongoose");
@@ -24,6 +26,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 app.use(express.json());
 app.use(cookieParser());
+app.use(express.static(path.join(__dirname, "client", "build")));
 
 //Middleware(verify used for protected routes)
 app.use("/api/search", verify);
@@ -178,6 +181,10 @@ app.post("/api/delete", (req, res) => {
       throw err;
     }
   });
+});
+
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "client", "build", "index.html"));
 });
 
 app.listen(PORT, () => {
